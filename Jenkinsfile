@@ -24,9 +24,9 @@ pipeline {
                 bat """
                 echo Restarting Tomcat...
 
-                C:\\Users\\thiyanesh\\OneDrive\\Desktop\\Jenkins\\College-Website-master\\bin\\shutdown.bat
+                "C:\\Program Files\\Apache Software Foundation\\Tomcat 11.0\\bin\\shutdown.bat"
                 timeout /t 5
-                C:\\Users\\thiyanesh\\OneDrive\\Desktop\\Jenkins\\College-Website-master\\bin\\startup.bat
+                "C:\\Program Files\\Apache Software Foundation\\Tomcat 11.0\\bin\\startup.bat"
                 """
             }
         }
