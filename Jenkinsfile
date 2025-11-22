@@ -14,7 +14,7 @@ pipeline {
                 bat """
                 echo Copying website files to Tomcat...
 
-                xcopy /E /I /Y "%WORKSPACE%\\*" "C:\\Users\\thiyanesh\\OneDrive\\Desktop\\Jenkins\\College-Website-master\\webapps\\ROOT\\"
+                xcopy /E /I /Y "%WORKSPACE%\\College-Website-master\\College\\*" "C:\\Program Files\\Apache Software Foundation\\Tomcat 11.0\\webapps\\ROOT\\"
                 """
             }
         }
@@ -41,3 +41,4 @@ pipeline {
         }
     }
 }
+
